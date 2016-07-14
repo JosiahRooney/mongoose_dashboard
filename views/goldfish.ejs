@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goldfish</title>
+</head>
+<body>
+    <% if (goldfish.length > 0) { %>
+        <p><%= goldfish %></p>
+        <p><a href="/goldfish/<%= goldfish_id %>/edit">Edit</a> <a href="/goldfish/<%= goldfish_id %>/delete" onclick="return confirm('Are you sure?');">Delete</a></p>
+    <% } else { %>
+        <p>There is no goldfish with the id of <%= goldfish_id %></p>
+    <% } %>
+</body>
+</html>
